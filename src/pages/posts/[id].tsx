@@ -1,9 +1,11 @@
 
-import Date from '@/components/Date';
+import Date from '@/components/date';
 import Head from 'next/head';
 import { getAllPostIds, getPostData } from '../../../lib/posts';
 
 export default function Post({ postData }: any) {
+  console.log(postData);
+  
   return (
     <div>
       <Head>
